@@ -3,81 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя шпаргалка по мемам</title>
+    <title>Мем-лаборатория RayRiAn</title>
+    <!-- Подключаем шрифты Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
-        /* Базовые стили */
+        /* --- ОБЩИЕ СТИЛИ --- */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #0d1117; /* Тёмный фон, как в GitHub */
+            color: #c9d1d9;
             line-height: 1.6;
         }
-        /* Шапка сайта */
+
+        /* --- ШАПКА --- */
         header {
-            background-color: #222;
-            color: white;
-            padding: 20px 0;
+            background-color: #161b22;
+            padding: 40px 20px;
             text-align: center;
+            border-bottom: 3px solid #00f5d4; /* Неоновая полоска */
+            box-shadow: 0 4px 15px rgba(0, 245, 212, 0.3);
         }
-        nav {
-            margin-top: 10px;
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 2.5em;
+            margin: 0 0 15px 0;
+            background: linear-gradient(90deg, #00f5d4, #9b5de5); /* Градиент */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; /* Делает текст прозрачным, виден градиент */
+            text-shadow: 0 0 20px rgba(0, 245, 212, 0.5);
         }
         nav a {
-            color: white;
+            color: #c9d1d9;
             text-decoration: none;
             margin: 0 15px;
-            font-weight: bold;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.3s ease;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #00f5d4;
+            text-shadow: 0 0 10px #00f5d4;
         }
-        /* Основной контент */
+
+        /* --- ОСНОВНОЙ КОНТЕНТ --- */
         main {
             max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #222;
+            margin: 40px auto;
+            background: #161b22;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
         }
         h2 {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 5px;
-            margin-top: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #00f5d4;
+            border-bottom: 2px solid #9b5de5;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        /* Блоки с кодом / примерами */
-        code {
-            background: #f0f0f0;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: monospace;
-            color: #d14;
+        p {
+            font-weight: 300;
+            font-size: 1.1em;
         }
+        strong {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        /* --- БЛОКИ С МЕМАМИ --- */
         .meme-block {
-            background: #fafafa;
-            border-left: 5px solid #ff9800;
-            padding: 15px;
-            margin: 15px 0;
+            background: #0d1117;
+            border-left: 5px solid #9b5de5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            transition: all 0.3s ease;
         }
-        /* Подвал */
+        .meme-block:hover {
+            border-left-color: #00f5d4;
+            box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
+            transform: translateX(5px);
+        }
+        .meme-block em {
+            color: #8b949e;
+        }
+
+        /* --- КОД (шпаргалка) --- */
+        code {
+            background: #21262d;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            color: #00f5d4;
+            border: 1px solid #30363d;
+        }
+
+        /* --- СПИСКИ --- */
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* --- ССЫЛКИ В КОНТАКТАХ --- */
+        a {
+            color: #9b5de5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #00f5d4;
+            text-decoration: underline;
+        }
+
+        /* --- ПОДВАЛ --- */
         footer {
             text-align: center;
-            padding: 20px;
-            background: #222;
-            color: white;
-            margin-top: 40px;
+            padding: 30px;
+            background: #161b22;
+            color: #8b949e;
+            margin-top: 60px;
+            border-top: 1px solid #30363d;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Добро пожаловать в мир мемов!</h1>
+        <h1>Мем-лаборатория</h1>
         <nav>
             <a href="#what-is">Что такое мем?</a>
             <a href="#types">Виды мемов</a>
@@ -114,7 +178,7 @@
             </div>
         </section>
 
-        <!-- Раздел 3: Шпаргалка по коду -->
+        <!-- Раздел 3: Шпаргалка -->
         <section id="code">
             <h2>ШПАРГАЛКА: КАК ДЕЛАТЬ МЕМЫ</h2>
             <p>Любой мем строится по определенным правилам (своеобразный "синтаксис"):</p>
@@ -126,7 +190,7 @@
             </ul>
         </section>
 
-        <!-- Раздел 4: Контакты (ОБНОВЛЕНО) -->
+        <!-- Раздел 4: Контакты -->
         <section id="contacts">
             <h2>МОИ КОНТАКТЫ</h2>
             <p>Если у тебя есть крутой мем, скидывай мне:</p>
