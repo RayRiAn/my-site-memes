@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мем-лаборатория RayRiAn</title>
+    <title>Мем-лаборатория</title>
     <!-- Подключаем шрифты Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,18 +24,19 @@
             background-color: #161b22;
             padding: 40px 20px;
             text-align: center;
-            border-bottom: 3px solid #00f5d4; /* Неоновая полоска */
-            box-shadow: 0 4px 15px rgba(0, 245, 212, 0.3);
+            border-bottom: 3px solid #b57bee; /* Нежная фиолетовая полоска */
+            box-shadow: 0 4px 15px rgba(181, 123, 238, 0.3); /* Свечение в тон */
         }
         h1 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 900;
             font-size: 2.5em;
             margin: 0 0 15px 0;
-            background: linear-gradient(90deg, #00f5d4, #9b5de5); /* Градиент */
+            /* Градиент из нежного фиолетового в белый */
+            background: linear-gradient(90deg, #b57bee, #e0c3fc); 
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; /* Делает текст прозрачным, виден градиент */
-            text-shadow: 0 0 20px rgba(0, 245, 212, 0.5);
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(181, 123, 238, 0.5);
         }
         nav a {
             color: #c9d1d9;
@@ -46,8 +47,8 @@
             transition: all 0.3s ease;
         }
         nav a:hover {
-            color: #00f5d4;
-            text-shadow: 0 0 10px #00f5d4;
+            color: #b57bee;
+            text-shadow: 0 0 10px #b57bee;
         }
 
         /* --- ОСНОВНОЙ КОНТЕНТ --- */
@@ -63,8 +64,8 @@
         h2 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            color: #00f5d4;
-            border-bottom: 2px solid #9b5de5;
+            color: #b57bee; /* Нежный фиолетовый */
+            border-bottom: 2px solid #b57bee;
             padding-bottom: 10px;
             margin-top: 40px;
             text-transform: uppercase;
@@ -82,15 +83,16 @@
         /* --- БЛОКИ С МЕМАМИ --- */
         .meme-block {
             background: #0d1117;
-            border-left: 5px solid #9b5de5;
+            border-left: 5px solid #b57bee; /* Фиолетовая полоска */
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
             transition: all 0.3s ease;
         }
         .meme-block:hover {
-            border-left-color: #00f5d4;
-            box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
+            /* При наведении становится чуть светлее и добавляет свечение */
+            background: #1a2029; 
+            box-shadow: 0 0 20px rgba(181, 123, 238, 0.3);
             transform: translateX(5px);
         }
         .meme-block em {
@@ -103,7 +105,7 @@
             padding: 3px 8px;
             border-radius: 5px;
             font-family: 'Courier New', monospace;
-            color: #00f5d4;
+            color: #b57bee;
             border: 1px solid #30363d;
         }
 
@@ -117,12 +119,12 @@
 
         /* --- ССЫЛКИ В КОНТАКТАХ --- */
         a {
-            color: #9b5de5;
+            color: #b57bee;
             text-decoration: none;
             transition: color 0.3s ease;
         }
         a:hover {
-            color: #00f5d4;
+            color: #e0c3fc; /* Светло-фиолетовый при наведении */
             text-decoration: underline;
         }
 
@@ -141,7 +143,7 @@
 <body>
 
     <header>
-        <h1>Мем-лаборатория</h1>
+        <h1>Мем-лаборатория RayRiAn</h1>
         <nav>
             <a href="#what-is">Что такое мем?</a>
             <a href="#types">Виды мемов</a>
@@ -204,6 +206,7 @@
 
     <footer>
         <p>&copy; 2026 Мамутова Анифе. Сайт создан в учебных целях.</p>
+        <p>Тема оформления: Soft Purple Neon</p>
     </footer>
 
 </body>
